@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0174BE"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="12sp"
+        android:orientation="vertical"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="48sp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WIFI MANAGER"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:contentDescription="wifi icon"
+                android:src="@drawable/wifi_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:layout_marginBottom="8sp"
+                android:background="#FFFFFF"
+                android:backgroundTint="@color/white"
+
+                android:text="START WIFI BY MANAGER"
+                android:textColor="@color/black"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="8sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:layout_marginBottom="8sp"
+                android:background="#FFFFFF"
+                android:backgroundTint="@color/white"
+                android:text="STOP WIFI BY MANAGER"
+                android:textColor="@color/black"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="8sp" />
+
+            <Button
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="42sp"
+                android:layout_marginBottom="8sp"
+                android:background="#FFFFFF"
+                android:backgroundTint="@color/white"
+                android:text="SHOW WIFI SETTINGS"
+                android:textColor="@color/black"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="8sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
