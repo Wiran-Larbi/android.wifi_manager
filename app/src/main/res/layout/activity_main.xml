@@ -45,6 +45,7 @@
             >
 
             <Button
+                android:id="@+id/startWifiBtn"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="42sp"
@@ -55,9 +56,10 @@
                 android:text="START WIFI BY MANAGER"
                 android:textColor="@color/black"
                 app:backgroundTint="#FFFFFF"
-                app:cornerRadius="8sp" />
+                app:cornerRadius="88sp" />
 
             <Button
+                android:id="@+id/stopWifiBtn"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="42sp"
@@ -70,6 +72,7 @@
                 app:cornerRadius="8sp" />
 
             <Button
+                android:id="@+id/showWifiSettingsBtn"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="42sp"
